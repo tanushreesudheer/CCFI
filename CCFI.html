@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change and its Financial Impacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+    <nav>
+        <img src="images/menu.png" class="menu-img">
+        <img src="images/Logo-dark.png" class="logo" id="logo">
+        <ul>
+            <li><a href="">Understanding the press</a></li>
+            <li><a href="">Load Forecasting</a></li>
+            <li><a href="">Land Use and Cover</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+
+    <div class="lamp-container">
+        <img src="images/lamp.png" class="lamp" id="earth">
+        <img src="images/light.png" class="light" id="light">
+    </div>
+
+    <div class="text-container">
+        <h1>Climate Change<br> and its Financial Impacts</h1>
+        <p>Climate change affects us all and it 
+            affects us more every year. It’s 
+            responsible for melting ice caps, 
+            rising sea levels, the acceleration of natural calamities, and extreme weather events. It plays a major role in shifts in agricultural productivity, energy, and many other sectors of the economy- these shifts come at a price.</p>
+        <a href="">Learn More</a>
+        <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+    var logo = document.getElementById("logo");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+</body>
+</html> 
